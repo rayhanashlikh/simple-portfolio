@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font's Quicksand css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Me own css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar-container">
+        <div class="logo">
+            <h1 class="logo">My Portfolio</h1>
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a class="navlinks" href="#home">Home</a></li>
+                <li><a class="navlinks" href="#about">About</a></li>
+                <li><a class="navlinks" href="#skills">Skills</a></li>
+                <li><a class="navlinks" href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="introduction" id="home">
+            <aside>
+                <img id="my-photo" src="assets/images/me.jpeg" alt="John Doe">
+            </aside>
+            <article>
+                <h1>Hi, I'm</h1>
+                <h1 class="name">Rayhan Ashlikh Rosyada</h1>
+                <p>Web Developer</p>
+            </article>
+        </div>
+        <div class="content">
+            <section id="about">
+                <div class="container">
+                    <article>
+                        <h1>About Me</h1>
+                        <p>My name is Rayhan Ashlikh Rosyada, currently an Informatics Engineering undergraduate
+                            at Universitas Dian Nuswantoro Semarang. Been working with Web Development for a while now,
+                            especially Backend. Always looking forward for more challenges.</p>
+
+                        <p>When I'm not coding, I'm usually playing games or watching movies.</p>
+                    </article>
+
+                    <h3>Let's get connected</h3>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/rayhan-ashlikh-rosyada-598155197/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a id="github" href="https://github.com/rayhanashlikh" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/rayhanind24" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a id="gitlab" href="https://gitlab.com/rayhanashlikh" target="_blank"><i
+                                class="fab fa-gitlab"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
+                <div class="container">
+                    <h1>Skills</h1>
+                    <div class="skills">
+                        <div class="row">
+                            <div class="card">
+                                <div class="card-header">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3"></i>
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="card-body">
+                                    <p>Been working with HTML5 and CSS3 along with JS to build websites</p>
+                                    <a href="https://github.com/rayhanashlikh?tab=repositories" class="btn"
+                                        target="_blank">More</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <i class="fab fa-php"></i>
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="card-body">
+                                    <p>Have built some backend app including RESTful API, and Simple E-Commerce</p>
+                                    <a href="https://github.com/rayhanashlikh?tab=repositories&q=&type=&language=php&sort="
+                                        class="btn" target="_blank">More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <div class="container">
+                    <h1>Projects</h1>
+                    <article class="project">
+                        <!-- <div class="project-image"> -->
+                        <img src="./assets/images/batikkraft.jpg" alt="Batikraft">
+                        <!-- </div> -->
+                        <div class="project-content">
+                            <h3><a href="https://gitlab.com/batikraft-dev/batikraft-web" target="_blank">Batikraft</a>
+                            </h3>
+                            <p>Simple Batik E-Commerce App built using CodeIgniter4, integrated with RajaOngkir API for
+                                shipment cost counting.</p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <!-- <div class="project-image"> -->
+                        <img src="./assets/images/face-recognition.jpg" alt="Face Recognition">
+                        <!-- </div> -->
+                        <div class="project-content">
+                            <h3>Face Recognition</h3>
+                            <p>Face Detection and Face Recognition app implementing Haar Cascade Classifier library from
+                                OpenCV using simple own dataset.</p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <!-- <div class="project-image"> -->
+                        <img src="./assets/images/Bengkel-Koding.png" alt="Bengkel Koding">
+                        <!-- </div> -->
+                        <div class="project-content">
+                            <h3>Bengkel Koding</h3>
+                            <p>Learning Management System for Bengkel Koding in Universitas Dian Nuswantoro, built using
+                                Laravel 9.</p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <!-- <div class="project-image"> -->
+                        <img src="./assets/images/library-assistant.jpg" alt="Library Assistant">
+                        <!-- </div> -->
+                        <div class="project-content">
+                            <h3>Library Assistant</h3>
+                            <p>Simple Mobile CRUD Data Book, built using Java as the mobile frontend and Laravel as a
+                                backend API.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rayhan Ashlikh Rosyada</p>
+    </footer>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a class="navlinks" href="#home">Home</a>
+        <a class="navlinks" href="#about">About</a>
+        <a class="navlinks" href="#skills">Skills</a>
+        <a class="navlinks" href="#projects">Projects</a>
+    </nav>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

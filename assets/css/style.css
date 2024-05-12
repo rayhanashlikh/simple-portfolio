@@ -1,0 +1,406 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section of css */
+header.navbar-container {
+    position: fixed;
+    /* Added property */
+    top: 0;
+    /* Added property */
+    width: 100%;
+    padding-block: 0.5rem;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 9999;
+    background-color: #070F2B;
+    color: #fff;
+}
+
+header.navbar-container .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list ul li {
+    list-style: none;
+}
+
+header.navbar-container .nav-list ul li a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main section of the css */
+
+main {
+    margin-top: 5rem;
+    /* Added property */
+}
+
+main #home {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+
+    background-color: #1B1A55;
+    color: white;
+}
+
+main .introduction {
+    padding: 2rem;
+    justify-content: space-around
+}
+
+main .introduction article {
+    align-self: center;
+    padding-inline: 5rem;
+}
+
+main .introduction h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+main .introduction h1.name {
+    margin-bottom: 1rem;
+}
+
+main .introduction img#my-photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding-inline: 5rem;
+    margin-block: 3rem;
+}
+
+.content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.content #about p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+.content #about h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.content #about .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.content #about .social-media a {
+    font-size: 2.5rem;
+    color: #1B1A55;
+    text-decoration: none;
+}
+
+.content #about .social-media a:hover {
+    color: #1c3aa6;
+}
+
+.content #about .social-media a#github:hover {
+    color: #010409;
+}
+
+.content #about .social-media a#gitlab:hover {
+    color: #E24329;
+}
+
+section .skills ul {
+    display: flex;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+section .skills ul li {
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.row {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.card {
+    background: #fff;
+    margin-bottom: 50px;
+    width: 20%;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.card-header {
+    padding: 50px 10px;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    background: #1B1A55;
+}
+
+.card-body {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 18px;
+}
+
+.card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: #9290C3;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 10px 5px;
+    transition: 0.3s;
+}
+
+.card-body .btn:hover {
+    transform: scale(1.01);
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+section#projects {
+    padding: 2rem;
+    background-color: #535C91;
+    color: white;
+}
+
+section#projects .project {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    color: black;
+}
+
+section#projects .project img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 30%;
+    border-radius: 15px;
+    border: black 1px solid;
+}
+
+section#projects .project a {
+    text-decoration: none;
+    color: #000 !important;
+}
+
+/* Footer section */
+footer {
+    background-color: #070F2B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: row;
+        align-items: start;
+        padding: 1rem 2rem;
+    }
+
+    header.navbar-container .nav-list ul {
+        display: none;
+    }
+
+    .hamburger {
+        margin-block: 1rem;
+        display: block;
+        position: relative;
+        width: 35px;
+        cursor: pointer;
+
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    .hamburger .bar,
+    .hamburger::after,
+    .hamburger::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
+    .hamburger.is-active::before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.is-active::after {
+        transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        z-index: 98;
+        background-color: #070F2B;
+        padding-top: 120px;
+        transition: 0.4s;
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 16px;
+        text-align: center;
+        padding: 12px 16px;
+        background-color: #1B1A55;
+
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:hover {
+        background-color: #24104f;
+    }
+
+    main #home {
+        flex-direction: column-reverse;
+    }
+
+    main .introduction section {
+        padding-inline: 0;
+    }
+
+    main #home.introduction section h1 {
+        font-size: 1.5rem;
+    }
+
+    main #home.introduction section h1.name {
+        font-size: 2rem;
+    }
+
+    main #home.introduction aside {
+        padding-inline: 0
+    }
+
+    main .introduction img {
+        margin-inline: 2rem
+    }
+
+    main .introduction img#my-photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    main .container {
+        padding: 2rem;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    section#projects .project {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    section#projects .project img {
+        width: 100%;
+        height: 100%;
+    }
+}
